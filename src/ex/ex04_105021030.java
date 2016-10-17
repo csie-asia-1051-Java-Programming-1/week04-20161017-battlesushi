@@ -12,11 +12,14 @@ import java.util.*;
 public class ex04_105021030 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
+		System.out.println("請輸入一個正整數:");
 		int x=sc.nextInt();
+		System.out.println("請輸入一個字元符號:");
+		char signal=sc.next().charAt(0);
 		
 		for(int i=1;i<=x;i++){
 			for(int j=x;j>=i;j--){
-				System.out.print("*");
+				System.out.print(signal);
 			}
 			System.out.println();
 		}	

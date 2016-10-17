@@ -9,9 +9,8 @@ public class ex02_105021030 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int n=0,m=0;
-		boolean run=true;
 		char run2='0';
-		while(run){
+		while(true){
 			System.out.println("請輸入兩個正整數 n 與 m:");
 			 n=sc.nextInt();
 			 m=sc.nextInt();	
@@ -24,7 +23,7 @@ public class ex02_105021030 {
 			System.out.println("是否繼續(Y/n)");
 			run2=sc.next().charAt(0);
 			if(run2=='N'||run2=='n')
-				run=false;
+				break;
 			else
 				continue;
 		}
