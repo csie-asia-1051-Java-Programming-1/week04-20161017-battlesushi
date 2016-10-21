@@ -12,12 +12,11 @@ import java.util.*;
 public class hw04_105021030 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		System.out.print("請輸入n(若使用3請輸入高度為一半的奇數):");
+		System.out.print("請輸入n(若使用3請輸入奇數):");
 		int num=sc.nextInt();
 		System.out.print("請輸入1~4:");
 		int choose=sc.nextInt();
 		int n=(num+1)/2;
-		int n2=num*2-1;
 		switch(choose){
 		case 1:
 			for(int i=0;i<n;i++){
@@ -49,8 +48,8 @@ public class hw04_105021030 {
 			break;
 		case 3:
 			
-			for(int i=1;i<=num;i++){
-				for(int j=num;j>=i;j--){
+			for(int i=1;i<=n;i++){
+				for(int j=n;j>=i;j--){
 					System.out.print(" ");
 				}
 				for(int k=1;k<=(i*2)-1;k++){
@@ -58,11 +57,11 @@ public class hw04_105021030 {
 				}
 				System.out.println();
 			}
-			for(int i=2;i<=n2;i++){
+			for(int i=2;i<=num;i++){
 				for(int j=1;j<=i;j++){
 					System.out.print(" ");
 				}
-				for(int k=n2;k>=(i*2)-1;k--){
+				for(int k=num;k>=(i*2)-1;k--){
 				System.out.print("#");
 				}
 				System.out.println();
